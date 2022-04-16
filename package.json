@@ -1,0 +1,26 @@
+{
+  "name": "ghibli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "npx tsc -p .",
+    "docs": "npx typedoc --plugin typedoc-plugin-markdown --out docs src/index.ts"
+  },
+  "keywords": [
+    "anime",
+    "ghibli"
+  ],
+  "author": "MattPlays",
+  "license": "MIT",
+  "devDependencies": {
+    "typedoc": "^0.22.13",
+    "typedoc-plugin-markdown": "^3.11.14",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "undici": "^5.0.0"
+  }
+}
